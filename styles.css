@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-image: url(https://i.pinimg.com/originals/a0/5f/8d/a05f8d5f6e1878fa70aaae66dd008e67.jpg);
+  color: #fdfdfd;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  background: #ffffffc0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0c0c0c8f;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 2.5rem;
+}
+.container li a{
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #1e3323;
+}
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  background: url('https://source.unsplash.com/featured/?fastfood') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #e7e3e3;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #233622;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #ffffff;
+}
+.menu-section {
+  padding: 4rem 0;
+}
+.menu-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+  height: 180px;
+  object-fit: cover;
+ 
+}
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+.price {
+  font-size: 1.25rem;
+  color: #294430;
+  margin-bottom: 1rem;
+}
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+/* Responsive Nav for Mobile */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    display: none;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
